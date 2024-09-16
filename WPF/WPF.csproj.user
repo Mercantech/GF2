@@ -7,21 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="CookieClicker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Taxa.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Page2.xaml.cs">
+    <Compile Update="HrGran.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="CookieClicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Taxa.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Page2.xaml">
+    <Page Update="HrGran.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

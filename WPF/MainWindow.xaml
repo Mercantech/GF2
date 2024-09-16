@@ -11,7 +11,8 @@
             <MenuItem Header="Navigation">
                 <MenuItem Header="Velkommen til WPF" Click="NavigateToMain"/>
                 <MenuItem Header="Taxa" Click="NavigateToTaxa"/>
-                <MenuItem Header="Page 2" Click="NavigateToPage2"/>
+                <MenuItem Header="Hr Gran" Click="NavigateToHrGran"/>
+                <MenuItem Header="Cookie Clicker" Click="NavigateToCookieClicker"/>
             </MenuItem>
         </Menu>
         <Button x:Name="welcomeButton" Content="Velkommen til WPF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Click="Button_Click"/>

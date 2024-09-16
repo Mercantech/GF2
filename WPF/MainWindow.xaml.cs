@@ -64,9 +64,14 @@ namespace WPF
             welcomeButton.Visibility = Visibility.Collapsed;
         }
 
-        private void NavigateToPage2(object sender, RoutedEventArgs e)
+        private void NavigateToHrGran(object sender, RoutedEventArgs e)
         {
-            mainFrame.Navigate(new Page2());
+            mainFrame.Navigate(new HrGran());
+            welcomeButton.Visibility = Visibility.Collapsed;
+        }
+        private void NavigateToCookieClicker(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new CookieClicker());
             welcomeButton.Visibility = Visibility.Collapsed;
         }
 
