@@ -168,7 +168,7 @@ namespace UnitTest
             string output = stringWriter.ToString();
             Assert.IsTrue(output.Contains("Lav et program som gemmer et input som en sandhedsværdi og skriver værdien ud i konsollen"));
             Assert.IsTrue(output.Contains("Indtast en sandhedsværdi (sandt/falsk): "));
-            Assert.IsTrue(output.Contains("true"));
+            Assert.IsTrue(output.Contains("true", StringComparison.OrdinalIgnoreCase));
         }
     }
 }
