@@ -1,6 +1,6 @@
 ﻿namespace Opgaver
 {
-    public class Variabler // Ændret fra internal til public
+    public class Variabler 
     {
         public static void Run()
         {

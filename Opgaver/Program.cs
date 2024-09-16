@@ -9,6 +9,7 @@
 
             //Kør Variabler Opgaverne!
             Variabler.Run();
+            Indputs.Run();
         }
 
         

@@ -13,6 +13,7 @@
                 <MenuItem Header="Taxa" Click="NavigateToTaxa"/>
                 <MenuItem Header="Hr Gran" Click="NavigateToHrGran"/>
                 <MenuItem Header="Cookie Clicker" Click="NavigateToCookieClicker"/>
+                <MenuItem Header="Binær Kodeomformer" Click="NavigateToBinary"/>
             </MenuItem>
         </Menu>
         <Button x:Name="welcomeButton" Content="Velkommen til WPF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Click="Button_Click"/>

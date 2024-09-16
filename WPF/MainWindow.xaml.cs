@@ -75,6 +75,12 @@ namespace WPF
             welcomeButton.Visibility = Visibility.Collapsed;
         }
 
+        private void NavigateToBinary(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new Binary());
+            welcomeButton.Visibility = Visibility.Collapsed;
+        }
+
         private void NavigateToMain(object sender, RoutedEventArgs e)
         {
             mainFrame.Content = null;

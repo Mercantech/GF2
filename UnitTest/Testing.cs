@@ -102,4 +102,73 @@ namespace UnitTest
             Assert.IsTrue(output.Contains("100,50"));
         }
     }
+
+    public class TestsOfIndputs
+    {
+        private StringWriter stringWriter;
+        private StringReader stringReader;
+
+        [SetUp]
+        public void Setup()
+        {
+            stringWriter = new StringWriter();
+            Console.SetOut(stringWriter);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            stringWriter.Dispose();
+            stringReader?.Dispose();
+        }
+
+        [Test]
+        public void TestString1()
+        {
+            stringReader = new StringReader("Hello, World!");
+            Console.SetIn(stringReader);
+            Opgaver.Indputs.String1();
+            string output = stringWriter.ToString();
+            Assert.IsTrue(output.Contains("Lav et program som gemmer et input som en string og skriver strengen ud i konsollen"));
+            Assert.IsTrue(output.Contains("Indtast en streng:"));
+            Assert.IsTrue(output.Contains("Hello, World!"));
+        }
+
+        [Test]
+        public void TestInt1()
+        {
+            stringReader = new StringReader("42");
+            Console.SetIn(stringReader);
+            Opgaver.Indputs.Int1();
+            string output = stringWriter.ToString();
+            Assert.IsTrue(output.Contains("Lav et program som gemmer et input som et tal og skriver tallet ud i konsollen"));
+            Assert.IsTrue(output.Contains("Indtast et tal:"));
+            Assert.IsTrue(output.Contains("42"));
+        }
+
+        [Test]
+        public void TestDouble1()
+        {
+            stringReader = new StringReader("3,14");
+            Console.SetIn(stringReader);
+            Opgaver.Indputs.Double1();
+            string output = stringWriter.ToString();
+            Assert.IsTrue(output.Contains("Lav et program som gemmer et input som et decimaltal og skriver tallet ud i konsollen"));
+            Assert.IsTrue(output.Contains("Indtast et decimaltal:"));
+            Assert.IsTrue(output.Contains("3.14") || output.Contains("3,14"));
+        }
+
+
+        [Test]
+        public void TestBool1()
+        {
+            stringReader = new StringReader("true");
+            Console.SetIn(stringReader);
+            Opgaver.Indputs.Bool1();
+            string output = stringWriter.ToString();
+            Assert.IsTrue(output.Contains("Lav et program som gemmer et input som en sandhedsværdi og skriver værdien ud i konsollen"));
+            Assert.IsTrue(output.Contains("Indtast en sandhedsværdi (sandt/falsk): "));
+            Assert.IsTrue(output.Contains("true"));
+        }
+    }
 }
