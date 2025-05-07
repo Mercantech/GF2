@@ -64,7 +64,7 @@ namespace Opgaver
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("Vælg et opgavesæt:");
             Console.WriteLine("1: Variabler");
-            Console.WriteLine("2: Indputs");
+            Console.WriteLine("2: Inputs");
             Console.WriteLine("3: Control Flow, If, Else, Switch og Ternary operator");
             Console.WriteLine("4: Loops");
             Console.WriteLine("5: Arrays, List og Dictionary");
