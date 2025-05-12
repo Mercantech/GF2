@@ -30,7 +30,9 @@ namespace Opgaver
         public static void Array1()
         {
             Console.WriteLine("Opgave 1 (Array):");
-            Console.WriteLine("Lav et program som gemmer 5 fornavne som brugeren indtaster i et array.");
+            Console.WriteLine(
+                "Lav et program som gemmer 5 fornavne som brugeren indtaster i et array."
+            );
             // Lav opgaven herunder!
             string[] navne = new string[5];
         }
@@ -38,21 +40,29 @@ namespace Opgaver
         public static void Array2()
         {
             Console.WriteLine("Opgave 2 (Array):");
-            Console.WriteLine("Lav et program som gemmer 5 tal i et array og udskriver det største tal.");
+            Console.WriteLine(
+                "Lav et program som gemmer 5 tal i et array og udskriver det største tal."
+            );
             // Lav opgaven herunder!
         }
 
         public static void Array3()
         {
             Console.WriteLine("Opgave 3 (Array):");
-            Console.WriteLine("Lav et program som gemmer 5 bynavne i et array og udskriver dem alle i omvendt rækkefølge.");
+            Console.WriteLine(
+                @"Lav et program som gemmer 5 bynavne i et array 
+                og udskriver dem alle i omvendt rækkefølge."
+            );
             // Lav opgaven herunder!
         }
 
         public static void List1()
         {
             Console.WriteLine("Opgave 1 (List):");
-            Console.WriteLine("Lav et program som gemmer 5 fornavne som brugeren indtaster i en liste.");
+            Console.WriteLine(
+                @"Lav et program som gemmer 5 fornavne 
+                som brugeren indtaster i en liste."
+            );
             // Lav opgaven herunder!
             List<string> navne = new List<string>();
         }
@@ -60,35 +70,50 @@ namespace Opgaver
         public static void List2()
         {
             Console.WriteLine("Opgave 2 (List):");
-            Console.WriteLine("Lav et program hvor brugeren kan blive ved med at indtaste navne indtil de skriver 'stop'. Udskriv alle navnene til sidst.");
+            Console.WriteLine(
+                @"Lav et program hvor brugeren kan blive ved med at indtaste 
+                navne indtil de skriver 'stop'. Udskriv alle navnene til sidst."
+            );
             // Lav opgaven herunder!
         }
 
         public static void List3()
         {
             Console.WriteLine("Opgave 3 (List):");
-            Console.WriteLine("Lav et program hvor brugeren indtaster 5 tal i en liste og programmet udskriver gennemsnittet.");
+            Console.WriteLine(
+                @"Lav et program hvor brugeren indtaster 5 tal i en liste 
+                og programmet udskriver gennemsnittet."
+            );
             // Lav opgaven herunder!
         }
 
         public static void List4()
         {
             Console.WriteLine("Opgave 4 (List):");
-            Console.WriteLine("Lav et program hvor brugeren indtaster navne på ting de skal købe, og kan fjerne ting fra listen igen. Udskriv listen til sidst.");
+            Console.WriteLine(
+                @"Lav et program hvor brugeren indtaster navne på ting de skal købe, 
+                og kan fjerne ting fra listen igen. Udskriv listen til sidst."
+            );
             // Lav opgaven herunder!
         }
 
         public static void List5()
         {
             Console.WriteLine("Opgave 5 (List):");
-            Console.WriteLine("Lav et program hvor brugeren indtaster navne på sine venner i en liste og programmet udskriver hvor mange navne der starter med 'A'.");
+            Console.WriteLine(
+                @"Lav et program hvor brugeren indtaster navne på sine venner 
+                i en liste og programmet udskriver hvor mange navne der starter med 'A'."
+            );
             // Lav opgaven herunder!
         }
 
         public static void Dict1()
         {
             Console.WriteLine("Opgave 1 (Dictionary):");
-            Console.WriteLine("Lav et program hvor du gemmer navne og alder på 3 personer i en dictionary og udskriver dem alle.");
+            Console.WriteLine(
+                @"Lav et program hvor du gemmer navne og alder på 3 personer 
+                i en dictionary og udskriver dem alle."
+            );
             // Lav opgaven herunder!
             // Husk syntaxen for Dictionary<type, type> navn = new Dictionary<type, type>();
         }
@@ -96,15 +121,24 @@ namespace Opgaver
         public static void Dict2()
         {
             Console.WriteLine("Opgave 2 (Dictionary):");
-            Console.WriteLine("Lav et program hvor brugeren kan indtaste et navn og få alderen på personen ud fra dictionaryen fra før.");
+            Console.WriteLine(
+                @"Lav et program hvor brugeren kan indtaste et navn 
+                og få alderen på personen ud fra dictionaryen fra før."
+            );
             // Lav opgaven herunder!
         }
+
         public static void MiniProjektKlasseliste()
         {
             Console.WriteLine("\nMini-projekt: Klasseliste (skabelon)");
             Console.WriteLine("Opgave:");
-            Console.WriteLine("Lav et program, hvor brugeren indtaster navnene på alle elever i en klasse (fx 5 navne).");
-            Console.WriteLine("Gem navnene i en liste og udskriv hele klasselisten i konsollen.");
+            Console.WriteLine(
+                "Lav et program, hvor brugeren indtaster navnene på alle elever i en klasse (fx 5 navne)."
+            );
+            Console.WriteLine(
+                @"Gem navnene i en liste og udskriv hele klasselisten 
+                  i konsollen."
+            );
             // Lav opgaven herunder!
         }
 
@@ -112,10 +146,15 @@ namespace Opgaver
         {
             Console.WriteLine("\nMini-projekt: Indkøbsliste (skabelon)");
             Console.WriteLine("Opgave:");
-            Console.WriteLine("Lav et program, hvor brugeren indtaster navnet på tre ting, de skal købe i supermarkedet.");
-            Console.WriteLine("Gem tingene i en liste og udskriv en indkøbsliste til brugeren.");
+            Console.WriteLine(
+                @"Lav et program, hvor brugeren indtaster navnet på tre ting og deres pris, 
+                de skal købe i supermarkedet."
+            );
+            Console.WriteLine(
+                @"Gem tingene i et key-value par med navn og pris, 
+                og udskriv en indkøbsliste med total pris til brugeren."
+            );
             // Lav opgaven herunder!
         }
-
     }
 }
