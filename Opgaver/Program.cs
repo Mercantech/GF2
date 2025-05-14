@@ -43,6 +43,9 @@ namespace Opgaver
                     case "9":
                         BinaryConverter.Run();
                         break;
+                    case "10":
+                        Banko.Run();
+                        break;
                     case "!":
                         run = false;
                         Console.WriteLine("Programmet afsluttes. Tak for denne gang!");
@@ -72,6 +75,7 @@ namespace Opgaver
             Console.WriteLine("7: Classes");
             Console.WriteLine("8: Sten, Saks, Papir projektet");
             Console.WriteLine("9: Binær/Decimal konvertering");
+            Console.WriteLine("10: Banko!");
             Console.WriteLine("!: Afslut");
             Console.WriteLine("?: For overblik over opgaverne");
             Console.Write("Indtast dit valg: ");
