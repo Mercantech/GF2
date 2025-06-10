@@ -10,6 +10,8 @@ namespace Teori.JSON
     /// <summary>
     /// Book klassen repræsenterer en bog i systemet
     /// Den bruges til at gemme information om en enkelt bog
+    /// Visual Studio gemmer JSON filen i mappen "bin/Debug/net9.0"
+    /// Visual Studio Code gemmer JSON filen i samme mappe som vores Program.cs
     /// </summary>
     public class Book
     {
@@ -91,6 +93,7 @@ namespace Teori.JSON
         /// </summary>
         static void LoadBooks()
         {
+            Console.WriteLine("Loading books from " + Path.GetFullPath(JsonFilePath));
             if (File.Exists(JsonFilePath))
             {
                 // Læs hele JSON filen
@@ -121,6 +124,8 @@ namespace Teori.JSON
         /// </summary>
         static void ViewAllBooks()
         {
+            Console.WriteLine("Loading books from " + Path.GetFullPath(JsonFilePath));
+
             if (books.Count == 0)
             {
                 Console.WriteLine("No books found.");
