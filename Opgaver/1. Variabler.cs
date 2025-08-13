@@ -12,6 +12,7 @@
             Strings1();
             Bool1();
             StringInterpolation();
+            StringInterpolation2();
             Float1();
             Char1();
             Decimal1();
@@ -61,6 +62,25 @@
             Console.WriteLine("Lav to string variabeler og udskriv dem ved brug af string interpolation.");
             Console.WriteLine("De skal være 'Hello, ' og 'World!'");
             // Lav opgaven herunder!
+        }
+
+        public static void StringInterpolation2()
+        {
+            Console.WriteLine("Opgave 5: ");
+            Console.WriteLine("Her er fire forskellige strenge. Din opgave er at kombinere dem til én sætning ved brug af string interpolation!");
+            Console.WriteLine("Strengene er: ");
+            string del1 = "Hej";
+            string del4 = "med";
+            string del3 = "dig";
+            string del2 = "!";
+            Console.WriteLine($"del1: {del1}");
+            Console.WriteLine($"del2: {del2}");
+            Console.WriteLine($"del3: {del3}");
+            Console.WriteLine($"del4: {del4}");
+            Console.WriteLine("Kombiner dem nu til én sætning:");
+
+            // Løsning med string interpolation
+            
         }
 
         public static void Float1()

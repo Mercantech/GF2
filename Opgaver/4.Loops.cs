@@ -19,6 +19,7 @@ namespace Opgaver
             Loop9();
             Loop10();
             BankeBøf();
+            MiniProjektLommeregner();
         }
 
         public static void Loop1()

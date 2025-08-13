@@ -8,11 +8,11 @@ namespace Opgaver
         {
             Console.WriteLine("Hej, GF2!");
             Console.WriteLine("Velkommen til opgaverne!");
-            Hjælp();
+            Help();
             bool run = true;
             while (run)
             {
-                string valg = Console.ReadLine();
+                string valg = Console.ReadLine() ?? "?";
 
                 switch (valg)
                 {
@@ -51,18 +51,19 @@ namespace Opgaver
                         Console.WriteLine("Programmet afsluttes. Tak for denne gang!");
                         break;
                     case "?":
-                        Hjælp();
+                        Help();
                         break;
                     default:
-                        Console.WriteLine("Ugyldigt valg!");
-                        Console.Write("Indtast dit valg: ");
+                        Console.WriteLine("Ugyldigt opgavesæt!");
 
                         break;
                 }
+                Console.WriteLine("------------------------------------------");
+                Console.WriteLine("Indtast et opgavesæt: ; for listen af opgavesæt skriv '?'");
             }
         }
 
-        public static void Hjælp()
+        public static void Help()
         {
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("Vælg et opgavesæt:");
