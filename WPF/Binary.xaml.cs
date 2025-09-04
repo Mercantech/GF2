@@ -27,7 +27,7 @@ namespace WPF
         }
         private void NotionButton_Click(object sender, RoutedEventArgs e)
         {
-            string url = "https://mercantec.notion.site/Bin-r-Kodeomformer-45731045d4094c7fb0df703800c6b962?pvs=4";
+            string url = "https://mercantec.notion.site/Bin-r-Kodeomformer-112dab5ca237807fb757e18a0b3ba76f";
             try
             {
                 ProcessStartInfo psi = new ProcessStartInfo

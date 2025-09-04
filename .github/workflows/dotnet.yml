@@ -37,3 +37,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: dotnet test ./UnitTest/UnitTest.csproj --collect:"XPlat Code Coverage"
         continue-on-error: true # Ignorerer fejl på main branch
+

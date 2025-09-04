@@ -58,27 +58,13 @@ namespace WPF
             }
         }
 
-        private void NavigateToTaxa(object sender, RoutedEventArgs e)
+        private void Navigate(object sender, RoutedEventArgs e)
         {
-            mainFrame.Navigate(new Taxa());
-            welcomeButton.Visibility = Visibility.Collapsed;
-        }
-
-        private void NavigateToHrGran(object sender, RoutedEventArgs e)
-        {
-            mainFrame.Navigate(new HrGran());
-            welcomeButton.Visibility = Visibility.Collapsed;
-        }
-        private void NavigateToCookieClicker(object sender, RoutedEventArgs e)
-        {
-            mainFrame.Navigate(new CookieClicker());
-            welcomeButton.Visibility = Visibility.Collapsed;
-        }
-
-        private void NavigateToBinary(object sender, RoutedEventArgs e)
-        {
-            mainFrame.Navigate(new Binary());
-            welcomeButton.Visibility = Visibility.Collapsed;
+            if (sender is MenuItem menuItem && menuItem.Tag is Type pageType)
+            {
+                mainFrame.Navigate(Activator.CreateInstance(pageType));
+                welcomeButton.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void NavigateToMain(object sender, RoutedEventArgs e)
@@ -86,5 +72,7 @@ namespace WPF
             mainFrame.Content = null;
             welcomeButton.Visibility = Visibility.Visible;
         }
+
+
     }
 }
