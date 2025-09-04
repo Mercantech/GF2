@@ -24,8 +24,9 @@ namespace Opgaver
                 "Lav et program som gemmer et input som en string og skriver strengen ud i konsollen"
             );
 
-            Console.WriteLine("Indtast en streng: ");
-            // Lav opgaven herunder!
+            Console.Write("Indtast en streng: ");
+            string? input = Console.ReadLine();
+            Console.WriteLine("Du indtastede: " + input);
         }
 
         public static void Int1()
@@ -34,8 +35,10 @@ namespace Opgaver
                 "Lav et program som gemmer et input som et tal og skriver tallet ud i konsollen"
             );
 
-            Console.WriteLine("Indtast et tal: ");
-            // Lav opgaven herunder!
+            Console.Write("Indtast et tal: ");
+            string? input = Console.ReadLine();
+            int tal = int.Parse(input ?? "0");
+            Console.WriteLine("Du indtastede: " + tal);
         }
 
         public static void Double1()
@@ -44,8 +47,10 @@ namespace Opgaver
                 "Lav et program som gemmer et input som et decimaltal og skriver tallet ud i konsollen"
             );
 
-            Console.WriteLine("Indtast et decimaltal: ");
-            // Lav opgaven herunder!
+            Console.Write("Indtast et decimaltal: ");
+            string? input = Console.ReadLine();
+            double decimaltal = double.Parse(input ?? "0");
+            Console.WriteLine("Du indtastede: " + decimaltal);
         }
 
         public static void Bool1()
@@ -54,8 +59,10 @@ namespace Opgaver
                 "Lav et program som gemmer et input som en sandhedsværdi og skriver værdien ud i konsollen"
             );
 
-            Console.WriteLine("Indtast en sandhedsværdi (sandt/falsk): ");
-            // Lav opgaven herunder!
+            Console.Write("Indtast en sandhedsværdi (sandt/falsk): ");
+            string? input = Console.ReadLine();
+            bool sandhedsværdi = bool.Parse(input ?? "false");
+            Console.WriteLine("Du indtastede: " + sandhedsværdi);
         }
 
         // Mini-projekt: Personlig profil (skabelon)
@@ -68,7 +75,18 @@ namespace Opgaver
                 "Gem oplysningerne i variabler og udskriv en præsentationstekst, der bruger alle oplysningerne."
             );
             Console.WriteLine("Eksempel: Hej, jeg hedder X, er X år gammel og kommer fra X!");
-            // Lav opgaven herunder!
+            
+            Console.WriteLine("Indtast dit navn: ");
+            string? navn = Console.ReadLine();
+            
+            Console.WriteLine("Indtast din alder: ");
+            string? alderInput = Console.ReadLine();
+            int alder = int.Parse(alderInput ?? "0");
+            
+            Console.WriteLine("Indtast din hjemby: ");
+            string? hjemby = Console.ReadLine();
+            
+            Console.WriteLine($"Hej, jeg hedder {navn}, er {alder} år gammel og kommer fra {hjemby}!");
         }
 
         // Mini-projekt 2: BMI-beregner (skabelon)
@@ -83,6 +101,17 @@ namespace Opgaver
             Console.WriteLine(
                 "Tip: BMI beregnes som vægt divideret med højde i anden (BMI = vægt / (højde * højde))."
             );
+            
+            Console.Write("Indtast din vægt i kg: ");
+            string? vægtInput = Console.ReadLine();
+            double vægt = double.Parse(vægtInput ?? "0");
+            
+            Console.Write("Indtast din højde i meter: ");
+            string? højdeInput = Console.ReadLine();
+            double højde = double.Parse(højdeInput ?? "0");
+            
+            double bmi = vægt / (højde * højde);
+            Console.WriteLine($"Din BMI er: {bmi:F2}");
         }
     }
 }
